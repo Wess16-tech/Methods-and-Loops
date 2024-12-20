@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h3>Random set of Numbers</h3>
+    <script>
+        document.write(Math.floor(Math.random()*10));
+    </script>
+    <script>
+        document.write(Math.floor(Math.random() * 11));
+    </script>
+    <script>
+        document.write(Math.floor(Math.random() * 100));
+    </script>
+    <script>
+        document.write(Math.floor(Math.random() * 101));
+    </script>
+    <script>
+        document.write(Math.floor(Math.random() * 10) + 1);
+    </script>
+    <script>
+        document.write(Math.floor(Math.random() * 100)+ 1);
+    </script>
+    <h3>Current Date</h3>
+    <p id="demo"></p>
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+    <h3>A random rounded number from 0 - 99.98</h3>
+    <script>
+        document.write(Math.floor(Math.random() * 99.99));
+    </script>
+</body>
+</html>
